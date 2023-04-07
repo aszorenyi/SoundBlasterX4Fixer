@@ -15,6 +15,6 @@ namespace SoundBlasterX4Fixer
 
         private static IHostBuilder CreateHostBuilder() => Host.CreateDefaultBuilder().ConfigureServices(
             (serviceCollection) => DependencyRegister.ConfigureServices(serviceCollection)
-        );
+        ).UseWindowsService();
     }
 }

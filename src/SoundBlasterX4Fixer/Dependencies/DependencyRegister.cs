@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using SoundBlasterX4Fixer.Interfaces;
 using SoundBlasterX4Fixer.Services;
 
 namespace SoundBlasterX4Fixer.Dependencies
@@ -13,7 +14,9 @@ namespace SoundBlasterX4Fixer.Dependencies
 
         private static void RegisterServices(IServiceCollection serviceCollection)
         {
-
+            serviceCollection.AddTransient<IDeviceService, DeviceService>();
+            serviceCollection.AddSingleton<IDeviceChangeNotificationService, DeviceChangeNotificationService>();
+            serviceCollection.AddSingleton<IPlayerManagementService, PlayerManagementService>();
         }
 
         private static void RegisterHostedService(IServiceCollection serviceCollection)
