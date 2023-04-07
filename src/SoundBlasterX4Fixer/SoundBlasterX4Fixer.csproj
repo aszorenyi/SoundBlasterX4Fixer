@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Copyright>© 2023, Adam Szorenyi</Copyright>
+    <Company>Adam Szorenyi</Company>
+    <StartupObject>SoundBlasterX4Fixer.Program</StartupObject>
+    <AssemblyName>SoundBlasterX4Fixer</AssemblyName>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <SignAssembly>False</SignAssembly>
+    <Product>Sound Blaster X4 Fixer</Product>
+    <ProductName>Sound Blaster X4 Fixer</ProductName>
+    <Authors>Adam Szorenyi</Authors>
+    <Description>SoundBlaster X4 Fixer</Description>
+    <AssemblyTitle>Sound Blaster X4 Fixer</AssemblyTitle>
+    <Authors>Adam Szorenyi</Authors>
+    <Version>1.0.0.0</Version>
+  </PropertyGroup>
+
+</Project>
