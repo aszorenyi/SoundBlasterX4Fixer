@@ -6,24 +6,28 @@ namespace SoundBlasterX4Fixer.Services
 {
     internal class DeviceService : IDeviceService
     {
-        private const string DeviceName = "Sound Blaster X4";
+        private readonly string[] DeviceNames = new[] { "Sound Blaster X3", "Sound Blaster X4" };
 
         public bool IsMatchingDevice(string deviceId)
         {
             var device = GetDevice(deviceId);
-            return string.Equals(
-                device.DeviceFriendlyName,
-                DeviceName,
-                StringComparison.InvariantCultureIgnoreCase
+            return DeviceNames.Any(
+                deviceName => string.Equals(
+                    device.DeviceFriendlyName,
+                    deviceName,
+                    StringComparison.InvariantCultureIgnoreCase
+                )
             );
         }
 
         public bool IsMatchingDevice(MMDevice device)
         {
-            return string.Equals(
-                device.DeviceFriendlyName,
-                DeviceName,
-                StringComparison.InvariantCultureIgnoreCase
+            return DeviceNames.Any(
+                deviceName => string.Equals(
+                    device.DeviceFriendlyName,
+                    deviceName,
+                    StringComparison.InvariantCultureIgnoreCase
+                )
             );
         }
 
@@ -40,10 +44,12 @@ namespace SoundBlasterX4Fixer.Services
                 DataFlow.Render,
                 DeviceState.Active
             ).Where(
-                wasapiDevice => string.Equals(
-                    wasapiDevice.DeviceFriendlyName,
-                    DeviceName,
-                    StringComparison.InvariantCultureIgnoreCase
+                wasapiDevice => DeviceNames.Any(
+                    deviceName => string.Equals(
+                        wasapiDevice.DeviceFriendlyName,
+                        deviceName,
+                        StringComparison.InvariantCultureIgnoreCase
+                    )
                 )
             );
 

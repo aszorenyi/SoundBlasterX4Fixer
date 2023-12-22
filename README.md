@@ -1,5 +1,5 @@
 # Sound Blaster X4 Fixer
-A simple workaround service to fix distorted notification and system sounds on Sound Blaster X4 USB sound cards.
+A simple workaround service to fix distorted notification and system sounds on Sound Blaster X3 and X4 USB sound cards.
 
 ## Why is this needed?
 There is a bug in Creative drivers which causes distortion on notification and system sounds on certain events (like opening the volume panel on the taskbar on Windows 11 or running the default Voice Recorder on Windows 10).
