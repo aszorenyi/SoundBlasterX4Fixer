@@ -224,13 +224,20 @@ end;
 
 procedure Dependency_AddDotNet60;
 begin
-  // https://dotnet.microsoft.com/download/dotnet/6.0
-  if not Dependency_IsNetCoreInstalled('Microsoft.NETCore.App 6.0.15') then begin
-    Dependency_Add('dotnet60' + Dependency_ArchSuffix + '.exe',
+  // https://dotnet.microsoft.com/download/dotnet/8.0
+  if not Dependency_IsNetCoreInstalled('Microsoft.NETCore.App 8.0.0') then begin
+    Dependency_Add(
+      'dotnet80' + Dependency_ArchSuffix + '.exe',
       '/lcid ' + IntToStr(GetUILanguage) + ' /passive /norestart',
-      '.NET Runtime 6.0.15' + Dependency_ArchTitle,
-      Dependency_String('https://download.visualstudio.microsoft.com/download/pr/46f6ac54-6f22-4c0b-92c2-9cc6a427c08f/a00a86f9652ea609e40b337e3553c1e6/dotnet-runtime-6.0.15-win-x86.exe', 'https://download.visualstudio.microsoft.com/download/pr/0f609431-fc27-4d13-a6b3-15db9153836a/4c7704d6a26f6099e0ff94cb5a853206/dotnet-runtime-6.0.15-win-x64.exe'),
-      '', False, False);
+      '.NET Runtime 8.0.0' + Dependency_ArchTitle,
+      Dependency_String(
+        'https://download.visualstudio.microsoft.com/download/pr/593685c9-7e98-455a-8e34-4b8ad1be9489/6ccf85c6fc244428d61f74ca3aee0645/dotnet-runtime-8.0.0-win-x86.exe',
+        'https://download.visualstudio.microsoft.com/download/pr/7f4d5cbc-4449-4ea5-9578-c467821f251f/b9b19f89d0642bf78f4b612c6a741637/dotnet-runtime-8.0.0-win-x64.exe'
+      ),
+      '',
+      False,
+      False
+    );
   end;
 end;
 
