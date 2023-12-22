@@ -297,10 +297,9 @@ Name: {app}\runtimes\win\lib\net6.0
 Source: "tools\netcorecheck.exe"; Flags: dontcopy noencryption
 Source: "tools\netcorecheck_x64.exe"; Flags: dontcopy noencryption
 #endif
-Source: ..\src\SoundBlasterX4Fixer\bin\Publish\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll; DestDir: {app}\runtimes\browser\lib\net6.0
-Source: ..\src\SoundBlasterX4Fixer\bin\Publish\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll; DestDir: {app}\runtimes\win\lib\net6.0
-Source: ..\src\SoundBlasterX4Fixer\bin\Publish\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll; DestDir: {app}\runtimes\win\lib\net6.0
-Source: ..\src\SoundBlasterX4Fixer\bin\Publish\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll; DestDir: {app}\runtimes\win\lib\net6.0
+Source: ..\src\SoundBlasterX4Fixer\bin\Publish\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll; DestDir: {app}\runtimes\win\lib\net8.0
+Source: ..\src\SoundBlasterX4Fixer\bin\Publish\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll; DestDir: {app}\runtimes\win\lib\net8.0
+Source: ..\src\SoundBlasterX4Fixer\bin\Publish\runtimes\win\lib\net8.0\System.ServiceProcess.ServiceController.dll; DestDir: {app}\runtimes\win\lib\net8.0
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.Configuration.dll; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.Configuration.Abstractions.dll; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.Configuration.Binder.dll; DestDir: {app}
@@ -311,6 +310,8 @@ Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.Configuratio
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.Configuration.UserSecrets.dll; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.DependencyInjection.dll; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll; DestDir: {app}
+Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.Diagnostics.dll; DestDir: {app}
+Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.Diagnostics.Abstractions.dll; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.FileProviders.Abstractions.dll; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.FileProviders.Physical.dll; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\Microsoft.Extensions.FileSystemGlobbing.dll; DestDir: {app}
@@ -338,11 +339,8 @@ Source: ..\src\SoundBlasterX4Fixer\bin\Publish\SoundBlasterX4Fixer.dll; DestDir:
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\SoundBlasterX4Fixer.exe; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\SoundBlasterX4Fixer.deps.json; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\SoundBlasterX4Fixer.runtimeconfig.json; DestDir: {app}
-Source: ..\src\SoundBlasterX4Fixer\bin\Publish\System.Diagnostics.DiagnosticSource.dll; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\System.Diagnostics.EventLog.dll; DestDir: {app}
 Source: ..\src\SoundBlasterX4Fixer\bin\Publish\System.ServiceProcess.ServiceController.dll; DestDir: {app}
-Source: ..\src\SoundBlasterX4Fixer\bin\Publish\System.Text.Encodings.Web.dll; DestDir: {app}
-Source: ..\src\SoundBlasterX4Fixer\bin\Publish\System.Text.Json.dll; DestDir: {app}
 
 [Tasks]
 Name: StartService; Description: Start the service after installation
