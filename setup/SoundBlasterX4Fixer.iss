@@ -1,6 +1,6 @@
 ﻿#define AppName "Sound Blaster X4 Fixer"
 #define ServiceName "SoundBlasterX4Fixer"
-#define AppVersion "1.0.0.0"
+#define AppVersion "1.1.0"
 #define AppAuthor "Adam Szorenyi"
 #define AppCopyright "© 2023"
 #define Appurl "https://github.com/aszorenyi/soundblasterx4fixer"

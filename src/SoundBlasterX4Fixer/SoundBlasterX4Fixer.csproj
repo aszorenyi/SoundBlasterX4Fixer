@@ -17,7 +17,7 @@
     <Description>SoundBlaster X4 Fixer</Description>
     <AssemblyTitle>Sound Blaster X4 Fixer</AssemblyTitle>
     <Authors>Adam Szorenyi</Authors>
-    <Version>1.0.0.0</Version>
+    <Version>1.1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
